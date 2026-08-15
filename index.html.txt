@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>برق برق — A World of Her Own</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="sky"></div>
+<div id="stars"></div>
+<div id="stars2"></div>
+<div id="cursor"></div>
+
+<button id="fs-toggle" class="glass" aria-label="Toggle fullscreen">
+  <svg id="fs-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 3H5a2 2 0 0 0-2 2v3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M16 21h3a2 2 0 0 0 2-2v-3"/>
+  </svg>
+</button>
+<div id="brand">برق&nbsp;برق</div>
+
+<nav id="nav" aria-label="Section navigation">
+  <button data-target="hero" class="active" aria-label="Go to hero"></button>
+  <button data-target="gallery" aria-label="Go to gallery"></button>
+  <button data-target="map" aria-label="Go to planet map"></button>
+</nav>
+
+<div id="frame">
+
+  <section id="hero">
+    <div class="eyebrow">A World Governed Entirely By Her</div>
+    <div class="planet-orb"></div>
+    <h1 class="title">برق&nbsp;برق</h1>
+    <p class="tagline">Two lightning bolts, one planet. No one asked permission to make it this bright — they just did.</p>
+    <div class="actions">
+      <button class="glow-btn" id="enter-btn">Enter The Atmosphere</button>
+      <button class="ghost-btn" id="explore-btn">Explore The Map</button>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="section-head">
+      <div class="eyebrow">Residents</div>
+      <h2>Daughters of Barq Barq</h2>
+      <p>Six citizens, six districts, one shared voltage.</p>
+    </div>
+    <div class="gallery-grid" id="gallery-grid"></div>
+  </section>
+
+  <section id="map">
+    <div class="section-head">
+      <div class="eyebrow">Cartography</div>
+      <h2>The Planet, Mapped</h2>
+    </div>
+    <div class="map-wrap glass" id="map-wrap"></div>
+    <p class="map-hint">Tap a light to read the district</p>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
